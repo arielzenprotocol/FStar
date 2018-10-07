@@ -573,7 +573,7 @@ let collect_one
         let w = match width with | Int8 -> "8" | Int16 -> "16" | Int32 -> "32" | Int64 -> "64" in
         add_dep deps (PreferInterface (Util.format2 "zen.%sint%s" u w))
     | Const_char _ ->
-        add_dep deps (PreferInterface "fstar.char")
+        add_dep deps (PreferInterface "zen.char")
     | Const_float _ ->
         add_dep deps (PreferInterface "fstar.float")
     | _ ->
