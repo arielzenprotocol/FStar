@@ -76,7 +76,7 @@ let max_lid = p2l ["max"]
 
 let float_lid  = p2l ["FStar"; "Float"; "float"]
 
-let char_lid  = p2l ["FStar"; "Char"; "char"]
+let char_lid  = p2l ["Zen"; "Char"; "char"]
 
 let heap_lid   = p2l ["FStar"; "Heap"; "heap"]
 
@@ -220,8 +220,8 @@ let all_lid          = p2l ["FStar"; "All"]
 let effect_ALL_lid   = p2l ["FStar"; "All"; "ALL"]
 let effect_ML_lid    = p2l ["FStar"; "All"; "ML"]
 let failwith_lid     = p2l ["FStar"; "All"; "failwith"]
-let pipe_right_lid   = p2l ["FStar"; "All"; "pipe_right"]
-let pipe_left_lid    = p2l ["FStar"; "All"; "pipe_left"]
+let pipe_right_lid   = p2l ["Zen"; "Base"; "op_Bar_Greater"]
+let pipe_left_lid    = p2l ["Zen"; "Base"; "op_Bar_Greater"]
 let try_with_lid     = p2l ["FStar"; "All"; "try_with"]
 
 let as_requires    = pconst "as_requires"
