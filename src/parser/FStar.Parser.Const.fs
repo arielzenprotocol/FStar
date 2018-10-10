@@ -65,7 +65,7 @@ let int16_lid   = p2l ["FStar"; "Int16"; "t"]
 let uint16_lid  = p2l ["FStar"; "UInt16"; "t"]
 let int32_lid   = p2l ["FStar"; "Int32"; "t"]
 let uint32_lid  = p2l ["Zen"; "UInt32"; "t"]
-let int64_lid   = p2l ["FStar"; "Int64"; "t"]
+let int64_lid   = p2l ["Zen"; "Int64"; "t"]
 let uint64_lid  = p2l ["Zen"; "UInt64"; "t"]
 
 let salloc_lid = p2l ["FStar"; "ST"; "salloc"]
