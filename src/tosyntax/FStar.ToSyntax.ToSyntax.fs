@@ -257,6 +257,7 @@ and free_type_vars env t = match (unparen t).tm with
   | QForall _
   | QExists _
   | Record _
+  | MatchBind _
   | Match _
   | TryWith _
   | Bind _
