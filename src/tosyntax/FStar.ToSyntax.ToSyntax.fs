@@ -1209,7 +1209,7 @@ and desugar_term_maybe_top (top_level:bool) (env:env_t) (top:term) : S.term * an
       let lambda = AST.mk_term (Abs([lambda_pat], ite)) t.range e.level in
       let ifBind = AST.mk_term (AST.Var(Ident.lid_of_path ["ifBang"] lambda_pat.prange)) lambda_pat.prange AST.Expr in
       desugar_term_aq env (AST.mkExplicitApp ifBind [i; lambda] top.range)
-      
+  
     | MatchBind(e, branches) ->
       let lambda_pat_id = Ident.gen Range.dummyRange in
       let lambda_pat_lid = Ident.lid_of_ids [lambda_pat_id] in
@@ -1219,7 +1219,7 @@ and desugar_term_maybe_top (top_level:bool) (env:env_t) (top:term) : S.term * an
       let lambda_var = AST.mk_term lambda_var' e.range e.level in
       let mtc = AST.mk_term (Match(lambda_var, branches)) e.range e.level in
       let lambda = AST.mk_term (Abs([lambda_pat], mtc)) e.range e.level in
-      let mtcBind = AST.mk_term (AST.Var(Ident.lid_of_path ["ifBang"] lambda_pat.prange)) lambda_pat.prange AST.Expr in
+      let mtcBind = AST.mk_term (AST.Var(Ident.lid_of_path ["matchBang"] lambda_pat.prange)) lambda_pat.prange AST.Expr in
       desugar_term_aq env (AST.mkExplicitApp mtcBind [e; lambda] top.range)
 
     | Seq(t1, t2) ->
