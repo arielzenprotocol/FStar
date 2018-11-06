@@ -221,7 +221,7 @@ let effect_ALL_lid   = p2l ["FStar"; "All"; "ALL"]
 let effect_ML_lid    = p2l ["FStar"; "All"; "ML"]
 let failwith_lid     = p2l ["FStar"; "All"; "failwith"]
 let pipe_right_lid   = p2l ["Zen"; "Base"; "op_Bar_Greater"]
-let pipe_left_lid    = p2l ["Zen"; "Base"; "op_Bar_Greater"]
+let pipe_left_lid    = p2l ["Zen"; "Base"; "op_Less_Bar"]
 let try_with_lid     = p2l ["FStar"; "All"; "try_with"]
 
 let as_requires    = pconst "as_requires"
